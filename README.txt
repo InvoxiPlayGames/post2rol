@@ -30,5 +30,6 @@ the shellcode
 
 some other POST codes can be found by searching for the
   rldicr    %r4, %r4, 56, 7
-instruction by itself, and replacing the std instruction that follows with a
-relative *linked* branch to the shellcode function
+instruction by itself, and replacing that instruction with a relative *linked*
+branch to the shellcode function, making sure to nop out the "std" instruction
+afterwards
